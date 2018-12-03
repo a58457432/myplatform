@@ -1,0 +1,209 @@
+{% load staticfiles %}
+<link rel="stylesheet" href="{% static 'css/reset.css' %}">
+ <style>
+		.modal-open {
+        overflow: inherit !important;
+        padding-right: 0px !important;
+        }
+
+		.style {
+			background: rgb(35, 47, 63);
+		}
+ </style>
+
+
+<nav class="nav navbar-nav" style="width: 12%; background: rgb(35, 47, 63); border-radius: 0px; margin-top: 56px;">
+    <div id="accordion" class="panel-group" style="background: rgb(35, 47, 63);">
+        <div class="panel panel-default" style="border: none;">
+            <div id="Three" class="panel-collapse collapse" aria-expanded="false"></div>
+            <div class="panel-heading"><h5 class="panel-title"><a data-toggle="collapse" href="#collapseCenter"
+                                                                  data-parent="#accordion" name="collapse" class=""
+                                                                  aria-expanded="true"><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAYCAYAAAARfGZ1AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQyIDc5LjE2MDkyNCwgMjAxNy8wNy8xMy0wMTowNjozOSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo5MTBEQzVDM0FGNTUxMUU4QkZFMkJENjY5QzVGNTUzMCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo5MTBEQzVDNEFGNTUxMUU4QkZFMkJENjY5QzVGNTUzMCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjkxMERDNUMxQUY1NTExRThCRkUyQkQ2NjlDNUY1NTMwIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjkxMERDNUMyQUY1NTExRThCRkUyQkQ2NjlDNUY1NTMwIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+E218xQAAAU5JREFUeNpi/P//PwMQJAFxFBDLAvF/KCYEGKH4MRAvBuKFGCqAhvv/pw4IBTkUGYOIw1Qy/Aa64UwM1AOs6AIgw39RyfCvUDoXiGNADBYsij4C8VVopDJikYeJqwGxCJL4XygdD8TGQCwJCps9aGE3Ez3scOA6NH0XoOLzofy/LFhc5w910T88LgcFpymO4IGFxl9swSIOxEFUiIMf1EwtDNhSC80AC5asfgWIN+EoAsyA2JUUw9HBWSCuxqE+lVTD0VMEKJ164XC5KKnBwkCpIQMSoUx4XE9O4mBADk6Q4RxUMpwTSjMjG76GSoYvQbOEAVYIzQHin2RWEj+AeDpSgbYBKv4JuZSTAGINIBYjslTEhRfCDEeOzBdQLAXE4UD8h8jgYANiYaTcbggV58KWUkA5cAEV4uAXI7RpgQ6WArEfmYaCDPwGxPkAAQYAGtHJPhgw3gAAAAAASUVORK5CYII="
+                    alt="" class="left_img"><span name="span_words" class="words">录入中心</span></a></h5></div>
+            <div id="collapseCenter" name="collapse_body" class="panel-collapse collapse in" aria-expanded="true"
+                 style="">
+                <div class="panel-body">
+                    <ul>
+                        <li name="libg" class=""><a href="/info/hostInput" class=""><p name="font"
+                                                                                       style="font-size: 12px;"
+                                                                                       class="">
+                            录入
+                        </p></a></li>
+                        <li name="libg" class="libg"><a href="/info/entryList"
+                                                        class="router-link-exact-active router-link-active"><p
+                                name="font" style="font-size: 12px;" class="words">
+                            录入列表
+                        </p></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="panel-heading"><h5 class="panel-title"><a data-toggle="collapse" href="#collapseDeploy"
+                                                                  data-parent="#accordion" name="collapse"
+                                                                  class="collapsed" aria-expanded="false"><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQyIDc5LjE2MDkyNCwgMjAxNy8wNy8xMy0wMTowNjozOSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo5NzkwN0Q3M0FGNTUxMUU4OTNFMDkxRUJEQ0I5MUIyRSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo5NzkwN0Q3NEFGNTUxMUU4OTNFMDkxRUJEQ0I5MUIyRSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjk3OTA3RDcxQUY1NTExRTg5M0UwOTFFQkRDQjkxQjJFIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjk3OTA3RDcyQUY1NTExRTg5M0UwOTFFQkRDQjkxQjJFIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+uwUCPgAAAalJREFUeNq8lj1LA0EQhvc0CtqJCoKohfiBQW1EtBEhYETxd8RCGwvxD/gDUtgoNlapLGy0shNJGj8aiVqoIIiIaAJRBLO+E97g5Nzrsg485OZmLrtzO+/uBdbaWWPMFugx9bUCSAcY4BwX48aTxUCg/FNwFMqR+BSYD91/BbtgDCRBBjyDZdDMnA+DCrL211LAOJixf22fsU761dw7lVOIhWaVAgOgQVX2DSYc1SfADhikfwieQHdN+TIifvt8rkEWfHGm9TR5C0WpwPg0qaAf2FA31cvKgfVbgq28J48DlGWAN3UjQ1FNK8RPOx6+pcA26W+ABfCickoijEcljLUIoS05hHbA2Cj9Dvp5LTRZg7wSywO4ccy2lwIMW45N0s5nRWiTKl5pU9FAk882lXfY5en/P/9FaHvci3yMVJIKSrho8VnBPRhWvX0GGlWObIJDPFhqVAqOuX5xcM1OSqhtpyh9e6X6djVCB3MOHVww1ko/Tv8yfODo2S6Cd0elyQhtrIAR+uvc+vXHQyBrIGdrm8812OZBXT0mXdu2jeiyQMWrvs47+RFgAE9aXr6486M3AAAAAElFTkSuQmCC"
+                    alt="" class="left_img"><span name="span_words" class="">部署中心</span></a></h5></div>
+            <div id="collapseDeploy" name="collapse_body" class="panel-collapse collapse" aria-expanded="false"
+                 style="height: 0px;">
+                <div class="panel-body">
+                    <ul>
+                        <li name="libg"><a href="/info/parameter" class=""><p name="font" style="font-size: 12px;">
+                            参数配置
+                        </p></a></li>
+                        <li name="libg"><a href="/info/mysqlDeploy" class=""><p name="font" style="font-size: 12px;">
+                            MySQL部署
+                        </p></a></li>
+                        <li name="libg"><a href="/info/deploymentList" class=""><p name="font" style="font-size: 12px;">
+                            部署列表
+                        </p></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="panel-heading"><h5 class="panel-title"><a data-toggle="collapse" href="#collapseOne"
+                                                                  data-parent="#accordion" class="collapsed"
+                                                                  aria-expanded="false"><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQyIDc5LjE2MDkyNCwgMjAxNy8wNy8xMy0wMTowNjozOSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpBMTk2QjY5M0FGNTUxMUU4OUYyNzk4NkE2Rjk2QzhGQiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpBMTk2QjY5NEFGNTUxMUU4OUYyNzk4NkE2Rjk2QzhGQiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkExOTZCNjkxQUY1NTExRTg5RjI3OTg2QTZGOTZDOEZCIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkExOTZCNjkyQUY1NTExRTg5RjI3OTg2QTZGOTZDOEZCIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+WB2PFAAAAXxJREFUeNrklT1Lw0AYgC+29VsKuvk5CjoJ0qmT4F/waxIdnfQPuDqJ4CA4FF3EwUUHFzfRLoIi6KDgJigIIrYYqtT4HLyBI0StCTkFDx7y9pq8T967e4njed6dUqpV2RllB+ELQZMloauFJdsVWhXWxUzgwQ6c1f4EFXrRxyHoHJ1QgPdv7i/FEZYhJ0KfKbhKSngekPkMwEYSwk0R1EMe+kOqvQgKox6aKpxK3AzzsAtjxj1bcBvl0LgwAauBubxU0gs3Mv8M66DbbTwkd01LOieJG2HFSNwu80NQDTxzAvdR9nBR3tbflwZYgH2JlVRf6/hSuAxpSZoxYv0CfXLV80txha7sQ8qQ6d9r0BE4iW1wEFd4bCxXSpbVH9vQbQiH4Smu8AEmoQVm4TXw/5E0dw8Uf9i7pc++Fo+wB6PQFdKH19JjI3/+8/Q/hJ6yOLRwmmvGku/NsVyg+lXhIBQS8szApQ7SxmQWcgkJs35gCiv62CYkrPjBhwADAM8Vy2K4glErAAAAAElFTkSuQmCC"
+                    alt="" class="left_img"><span name="span_words" class="">主机管理</span></a></h5></div>
+            <div id="collapseOne" name="collapse_body" class="panel-collapse collapse" aria-expanded="false"
+                 style="height: 0px;">
+                <div class="panel-body">
+                    <ul>
+                        <li name="libg" class=""><a href="/info/hostList" class=""><p name="font"
+                                                                                      style="font-size: 12px;" class="">
+                            主机列表
+                        </p></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="panel-heading"><h5 class="panel-title"><a data-toggle="collapse" href="#collapseTwo"
+                                                                  data-parent="#accordion" class="collapsed"
+                                                                  aria-expanded="false"><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAaCAYAAACgoey0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQyIDc5LjE2MDkyNCwgMjAxNy8wNy8xMy0wMTowNjozOSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpBNzdFM0ZCM0FGNTUxMUU4QUQ2QUM2N0UzRUEwRDMxNyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpBNzdFM0ZCNEFGNTUxMUU4QUQ2QUM2N0UzRUEwRDMxNyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkE3N0UzRkIxQUY1NTExRThBRDZBQzY3RTNFQTBEMzE3IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkE3N0UzRkIyQUY1NTExRThBRDZBQzY3RTNFQTBEMzE3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+CRu8KQAAArdJREFUeNqs1llIVFEcx3HHJXO0cskWyiyhhwINnIJIIqEIiqLtMXyxByHC6KHoKSjopR7qoeahBbQFoRdDooWMkIw2ok19kEAjSoW0aBmXJm/fE7+Ry2XmLpN/+Axz5965555z/ud/bsiyrAyXKMRi5GEOxjCKAQxiMiPNyHYcr8JOrEc1ilz++xs9eIHbuKMH8xemx1iDTst/dOMy+my/DeEQsnRPV+ajFhMBGv2MsG6QjWP4Yzvf7KfhTDrdgJwA09ONGJrQjqeamhP4hDqPKZoa6jYrWPxAiYbWxCROYrVGogmL/PQ4aBTgCM7rOIR5uIAHOK6Mdw3TcDyNxvcjim86NlN1DWvxBFV+hrrOSi+qbdP0C19t5wZR4TXUV1GP4YC9rsUjfQ+r2CRiPq4jy63HlXoKkxj1uIkRHz1+jJUe1zSk6nGIjxu034JWxzNVYCnK1KPZjpL5AW/RiZoU/fqo+8TdllM7diPfTwGQAvz06PWGZP+11+qNYnr1Eq/xXkvji66ZgWJ5jlLke+TCdnQk2yTGHb/N1NDVeNzwoJajV+zBYTO4znV8xfmjz4hph8rw2B5NnkSSFZBb2IregA0vxzN9v4c+l2tNpct1Jtc6TXgmNiOKd4h7JI3ZEnNxGluwz+P6HlTZl1OrdpmoY8jNXC/DApSoJpv4rmTrdxQdc75Zu1OqGMEmvLIvJ7O5H0BZgOVk5GEbzqDYx243jHLT4zalvD36tKT6VQRGtSGENVcLlTQr9IqU2M8fYhcalcmzbPc0ReQUhnDfPHGLNb3xRq8/pTiLMdu5S8hJvPqYyjI+jQ1fdExFOc5pB7OUvFMvexF0/GeDA2jU6kiWC3NxFF3YG3K8V1dih96hIsrmVDGBLq3luzLhswYUhjxe6E1yLNHSKlKSxVS/B9OseP/irwADAKn7EdAwt61FAAAAAElFTkSuQmCC"
+                    alt="" class="left_img"><span name="span_words">MySQL管理</span></a></h5></div>
+            <div id="collapseTwo" name="collapse_body" class="panel-collapse collapse" aria-expanded="false">
+                <div class="panel-body">
+                    <ul>
+                        <li name="libg"><a href="/info/clusterlist" class=""><p name="font" style="font-size: 12px;">
+                            集群列表
+                        </p></a></li>
+                        <li name="libg"><a href="/info/instancelist" class=""><p name="font" style="font-size: 12px;">
+                            实例列表
+                        </p></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="panel-heading"><h5 class="panel-title"><a data-toggle="collapse" href="#collapseEight"
+                                                                  data-parent="#accordion" class="collapsed"
+                                                                  aria-expanded="false"><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQyIDc5LjE2MDkyNCwgMjAxNy8wNy8xMy0wMTowNjozOSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpDREJBOUMwM0FGNTUxMUU4QkQ4REQyODJCRjM2QTgxQiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpDREJBOUMwNEFGNTUxMUU4QkQ4REQyODJCRjM2QTgxQiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkNEQkE5QzAxQUY1NTExRThCRDhERDI4MkJGMzZBODFCIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkNEQkE5QzAyQUY1NTExRThCRDhERDI4MkJGMzZBODFCIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8++sM6QgAAAmVJREFUeNrElztoFEEYx2dzwWjUIj4QEy18HBZnULSJIKbUQgikFKzEzlenRVAjIkEQRLCxULDTIoUoNtqI5OQQRYMvTjBioZ5YCMkZ5HT9DfwPhmX24e5JPvixM7sz89/9vplvZk0YhgZ64Ry8h1aY31oaYxyWaGwvbdFq2HmbShLvMsacgiHTedsFJ+MeBtY1XDep/gh+FRRcBHtUtmOX44RbXEuqL4VmQeFemFP5N3T7GnU7otY2w2xB4WVOuZTk6tD8Xwt8N7vMAtmCCUcD/xM+p/RZo0lYzP+RGJe1BJKsHz453noHT+Ar9GiCDjuTLMjyxafhVYpwWaL3YAzewk69kF2al6EBh2A8dpSc+fgo9MEl+OFpU4O9MJCUq//VrGgZ6qrPwiRchKswrft/4HyccDTG9+FlxCnbYJ/K1r0HoaZY3oYj8C3SZwSuwwo4DlfSXL3O83brnefb5V5rtyBI2Pp2QBPmoD/N1Q14GqGhZ29gsWJq3bs6ab8VE+o7ViTGN2C3ypMZRC1b1f6hbz/Oal9gQOV6xj51Z+3nTpk2W817dqAsO9V8EWF7WHih8nDGPu1200USSFPns5rqIynxLTlt96dNrlHY6GGLJsgJZSSbHL5rycSJXtOYVd+yi7p6LfR5WAXLlZtfwwUlh8cwARWdtey9UajCYSdElU7k6mewEo4pOcRZ1ckB9joYdXWeA7w9tA8pI9nk8EC5+zncVEwDrWOvuNEgeczG+Q4cgA3QExPvQZ+40e9Gp+wjVLKIG/1mTHVQ/EyGL59p37TiZxWnIj9tH2K+2BWfgbt/BRgAgdmRLJkMJ5IAAAAASUVORK5CYII="
+                    alt="" class="left_img"><span name="span_words">慢查询</span></a></h5></div>
+            <div id="collapseEight" name="collapse_body" class="panel-collapse collapse" aria-expanded="false">
+                <div class="panel-body">
+                    <ul>
+                        <li name="libg"><a href="/info/slowquerylist" class=""><p name="font" style="font-size: 12px;">
+                            慢查询列表
+                        </p></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="panel-heading"><h5 class="panel-title"><a data-toggle="collapse" href="#collapseFour"
+                                                                  data-parent="#accordion" class="collapsed"
+                                                                  aria-expanded="false"><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQyIDc5LjE2MDkyNCwgMjAxNy8wNy8xMy0wMTowNjozOSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoyODE1NEFFM0FGNjIxMUU4OUNBMzg3NzJDQ0EwMTZFOCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoyODE1NEFFNEFGNjIxMUU4OUNBMzg3NzJDQ0EwMTZFOCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjI4MTU0QUUxQUY2MjExRTg5Q0EzODc3MkNDQTAxNkU4IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjI4MTU0QUUyQUY2MjExRTg5Q0EzODc3MkNDQTAxNkU4Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+a5IiAwAAAxJJREFUeNq8l8tLVUEcx7160xKVUss00rTItALNqDYhmFLQgxYtzNpEi4JoUdSqf0GIUClqURCugjY9Nj0JoodpRS+0l0UilpJkqSV6+/zge2i6navHS/qDD3fmnJnfd+bM/H4zNxSJRBICWCJUwlYogUxI0buf0Acv4TLcgbGJHIYCCJfCLqiG1RqEn5lYC9yAZg0kbuE1cAh2QFjP3kI79EosA4qgTO9H4QIch4cxPZtwDIrhUuSPfYKzUAeFEIYkyIfNUA8vnPbWd2ks/7FE50ATDMtJJxyEZL3PhiIocJ4Z2+GB+ljfBpgdVNhmUQN9ctAP+/UuBSrhBFyFRlgU1b/Gmbn5qJbPCYXz4LTzyRr1zN7thQ/wC8bgto9wogY6qv6nIDeIcDl0qNOAZmDPN0Jr5G+zQVRBGqzQelvb5dCiNuarLFon7LPf5mmXmj2HTpXXOzvXszxogH74CifhI3yGewo/85UdLeInnAVJKr+DYZXn+sRwWHFu9g0uqjwI7xVuSX7CfskgHJUUPPsxQaKxuP7uRani2UsSM4IID0R9Si813oeucYQtWbSpPBNyHf8DQYR7nYalWvMEpcJG6Pbp8xTOwxvVZyvrhfQVeoOscY9ybhXMhw2aiR0EZ7R+tTooRpWTbVPd8tIwlMNa50v1BEmZGXBEsWr2Whkp5LTJgpWwBFKj+lfAFfUdgcOQHiSOTaAEnjjxehc2KTnESrPWrxTOSdDssXJ+4FxtAjuhWw4sSz2DY7DYp719gT1wEwbVx/rWxhrseMfiLDgAR50NZuv8SvHdrTW2+C6AYv16+6QemmBossdigk4Wy7uPIv/akDM716ztvlinUpAZe5ak28cWqNDMMqPa2JfogFZdf65NdP0JBbxzeUlhncRXQZ2eNyvc2hQ6w0GcTUbYtWVaa6/cPlkHiXGIWoLIceo58Yw8HuGFunV6thvyp0O4UPdrz7Y55/eUCidDulNP17MpF7YwGXHqI0H+OfwPYb/NNi2byxJKmlNPda5KgS0ch/AXuA4LVO/S5W5S9luAAQBJ2/QhCn8y6QAAAABJRU5ErkJggg=="
+                    alt="" class="left_img"><span name="span_words">系统巡检</span></a></h5></div>
+            <div id="collapseFour" name="collapse_body" class="panel-collapse collapse" aria-expanded="false">
+                <div class="panel-body">
+                    <ul>
+                        <li name="libg"><a href="/info/insConfiguration" class=""><p name="font"
+                                                                                     style="font-size: 12px;">
+                            巡检配置
+                        </p></a></li>
+                        <li name="libg"><a href="/info/hostInspection" class=""><p name="font" style="font-size: 12px;">
+                            主机巡检
+                        </p></a></li>
+                        <li name="libg"><a href="/info/sqlInspection" class=""><p name="font" style="font-size: 12px;">
+                            MySQL巡检
+                        </p></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="panel-heading"><h5 class="panel-title"><a data-toggle="collapse" href="#collapseFive"
+                                                                  data-parent="#accordion" class="collapsed"
+                                                                  aria-expanded="false"><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAZCAYAAAAiwE4nAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQyIDc5LjE2MDkyNCwgMjAxNy8wNy8xMy0wMTowNjozOSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpCNjc4NTMyM0FGNTUxMUU4OEQ1ODk4MUE2Mjc2MDE5NiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpCNjc4NTMyNEFGNTUxMUU4OEQ1ODk4MUE2Mjc2MDE5NiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkI2Nzg1MzIxQUY1NTExRTg4RDU4OTgxQTYyNzYwMTk2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkI2Nzg1MzIyQUY1NTExRTg4RDU4OTgxQTYyNzYwMTk2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+/5sZIgAAAdtJREFUeNq8ljtLA0EQx/dyFx9g7BUFEW0ExUaUNAqC4qMQLPwAFhZ+BQtBv4CFha2VCJYiKIKKiAQDoiAWKhY+AhZBNBCjyfofmEBcZi+JuWTgB3s7uzO7szO752itN5VSc6BOVU8yYAtcOHD4jYanqi/k544cakHxA3LCJJcjEeLvHI+XhMaEjb53T3C2CC5BVjBCzpbBOH/f8PiMMLYXrBtOteTwCHQVGM3LF1gFtwW6N3Bi2eEzL9rXIYW3CcyCecHIjhHqbrBiiUabEFIxWRzwKfSn+GxDhtGlcjKn0uz84HPUgo4i1WMs0OowLPQ18uRC49dgmHduyiA4BvXFHGZ55SkhpOlKi9ET6oxYA9vCQihDI0bqn1pqNiJFyix8mngAHoXdUDI1gxHQ8c8NJqWbppqS9ISwUa29BmC8hevZ9TtDcrgHrgJw2AdmTIdSSLWlrsoVh/kT0pCqsXjCQ7kQYEg3jIfdkepwAvQHlDSu0ZemM4yhMVCDaMbyvxjTaEwaN4gprSAKGgQdXRBn4KXIJb8L7hUlaQlEQULLkmB9SbaKZanLO2/3eVk81keEM1PSXWrT0eM6BkbBEOj0sfMAzsEh2AdP1pE+258CcV2exHme1e6vAAMAyVYzvN6YPPIAAAAASUVORK5CYII="
+                    alt="" class="left_img"><span name="span_words">备份中心</span></a></h5></div>
+            <div id="collapseFive" name="collapse_body" class="panel-collapse collapse" aria-expanded="false">
+                <div class="panel-body">
+                    <ul>
+                        <li name="libg"><a href="/info/backupList" class=""><p name="font" style="font-size: 12px;">
+                            备份列表
+                        </p></a></li>
+                        <li name="libg"><a href="/info/backupStrategy" class=""><p name="font" style="font-size: 12px;">
+                            备份策略
+                        </p></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="panel-heading"><h5 class="panel-title"><a data-toggle="collapse" href="#collapseRestore"
+                                                                  data-parent="#accordion" class="collapsed"
+                                                                  aria-expanded="false"><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAXCAYAAAAV1F8QAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQyIDc5LjE2MDkyNCwgMjAxNy8wNy8xMy0wMTowNjozOSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpCQzMzRUE0M0FGNTUxMUU4OUQ4Q0YzMDRFOEQxMDA4RiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpCQzMzRUE0NEFGNTUxMUU4OUQ4Q0YzMDRFOEQxMDA4RiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkJDMzNFQTQxQUY1NTExRTg5RDhDRjMwNEU4RDEwMDhGIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkJDMzNFQTQyQUY1NTExRTg5RDhDRjMwNEU4RDEwMDhGIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+k4nduAAAAd9JREFUeNq0lrsvREEUxu+uRYho7FJ5RoJGQUIhZCPZ0iORKPgPFOIZlYaGRuIvoBA6EQUJBfHIKjYiolBYki1orCDE2/Wdde6a3NyZHdc6yW9n9853z3dn5szc9Zim6TcMow1kGvL4AJsgZrgMD4wiaOs1tJegDLy5NfqkVlNf6nZUvl+YUPSCeAoNTfM2iNpHZBrpj3tQIT6U1/ifyAc19qkT4xFE3C64Le5kU/fO1XcMckF2Gswo9+33t5/YIk8wQZVopi9OQaE4dWGQA0YVlUgVdQZeQXWKTW5FFQiJI2oHTZKnegfT9GQ8aiIPDIEHjVHVikaUZFAi7OHkHWAOLPA1H2hIYXYDvJZRlBMtOQiXuG/WoW8NZIAxhdFqot74xyInO3cQBkGzIlEXKAAfkv4Rym1t2AMQAOUOi3kCWhWLHeIT4ErSvyueDGTUIBFmgSeF0SO32ZK+Q8voGRwpjPpAnWJDLnMJ+x36w8lTBvO3z+uzrrkBSTfJJd/P985LtOPWdqCPGUBH0bWGCZ0aXlAESjjJsEIfFI26QaWGSRwE+MYc0Ak2FPpn1iWNSnjz6UQMNIIWDe2ecIokXhMxRSHYoxjsgAsN7Yr9NUHtgP1F9cegPzJT4MW68CXAAI2irHhwGc+QAAAAAElFTkSuQmCC"
+                    alt="" class="left_img"><span name="span_words">还原中心</span></a></h5></div>
+            <div id="collapseRestore" name="collapse_body" class="panel-collapse collapse" aria-expanded="false">
+                <div class="panel-body">
+                    <ul>
+                        <li name="libg"><a href="/info/restoreTemplate" class=""><p name="font"
+                                                                                    style="font-size: 12px;">
+                            还原模板
+                        </p></a></li>
+                        <li name="libg"><a href="/info/deployRestore" class=""><p name="font" style="font-size: 12px;">
+                            部署还原
+                        </p></a></li>
+                        <li name="libg"><a href="/info/restoreList" class=""><p name="font" style="font-size: 12px;">
+                            还原列表
+                        </p></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="panel-heading"><h5 class="panel-title"><a data-toggle="collapse" href="#collapseSync"
+                                                                  data-parent="#accordion" class="collapsed"
+                                                                  aria-expanded="false"><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAACPElEQVRIS92W4U0cMRCF31QQOgipgHQAV0GSCgIV5KggXAUJFQQqCFQQqACuArgOSAWDvpUHeRev18shIWHp/tza8+bNezO26Y2WvRGuJoHdfUfST0mfG5O8lbQys4fa/hbgpaRfjaCxDeCTbYEJAOOW9V/Sb36vwbgV+FzSiZndk2GSiErBvvsvX9VSuzu6cvigQvc6AV7FHndHHqqEPxZm9vQt9jwDTpl+IZik3QogZT00s4sMkARJNDfisZlR/nHGg0xjIwAfCgl8G4AS/MdIojA+ykv+xNjdzyR9TwfDJPzHb78QsMfE3ceAI3HaC/CuQh3w4NClpGVmkmYm7o40SBQECL9IHonOAPzM0ua7xOjczA5zdklzWGOUsYWbc3PlCXTmcnfi/pEE808AR4nXZtY6nVp6mkru5rq6O8kh2wpgeuyjpJ5ZmiLP3OTuuP6fpGuAPZ0v9tvM2NXtGbAAZqjvwVhSp9PUuHtpMpnOm1xjQFeS/qZJdJoNhjALkrSuCzPLY2DOmzSULoeupse+pshoj/W7KiR3Mwr5lQZKKaGuddJZtA3zLqKPa1dfb+qk9iNB5JlaVJC9tFGAnprZMp9ctVtow8HQPtNqCpikAYwZsGaYEKd3SRQCPrtfkzPxQW2glBLqmMaHIXD0Gd9L9yuXQPVlUUDsxakBE3g4Ahl3XHdzWY4+gaYeAlSA4V57CNR0ng88w0CvDtz61no/wEww2mabNXrjtZjrpca6Kr0ui+20DbW5Zx8BbiwaOIwz5C4AAAAASUVORK5CYII="
+                    alt="" class="left_img"><span name="span_words">数据同步</span></a></h5></div>
+            <div id="collapseSync" name="collapse_body" class="panel-collapse collapse" aria-expanded="false">
+                <div class="panel-body">
+                    <ul>
+                        <li name="libg"><a href="/info/createSynchronization" class=""><p name="font">创建同步</p></a></li>
+                        <li name="libg"><a href="/info/synchronList" class=""><p name="font">同步列表</p></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="panel-heading"><h5 class="panel-title"><a data-toggle="collapse" href="#collapseSix"
+                                                                  data-parent="#accordion" class="collapsed"
+                                                                  aria-expanded="false"><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQyIDc5LjE2MDkyNCwgMjAxNy8wNy8xMy0wMTowNjozOSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpENkVGNTQ1M0FGNTUxMUU4QkNEMkQ2ODhEQkU2NEQxOSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpENkVGNTQ1NEFGNTUxMUU4QkNEMkQ2ODhEQkU2NEQxOSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkQ2RUY1NDUxQUY1NTExRThCQ0QyRDY4OERCRTY0RDE5IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkQ2RUY1NDUyQUY1NTExRThCQ0QyRDY4OERCRTY0RDE5Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+GeZKTAAAAVJJREFUeNpifPnyJQMJwAWINYCYGYjvAvEeMTGxH8RoZCTSojQgLgJidTTx50A8BWhZGzUsmgDE+QTUrAdaFoRPARMBA3KIsAQEAl+9ejWDXB/xAfFHBtKAFNBnz0n1USwD6SCDnKDTJcMic3IsYiXDImZyLHpLhkWvyLFoLRkWLSU3Hx0CYlsiLXkOTHFS5OajQCAmpuj4DcRelGTYt9CU9IGQJUDfXKCkCMoD4hhoUufAoeYvEF8F4s1A3Aa08BspFhkB8UogViExMbwD4kSgZZuICbo4ID5LhiUgIATEG4HlXi0hH4UD8QoG6oASoM96sVkkDcRPGKgLrIGWHUMPupUM1Adr0OPIFWQ7DSySBMZXHrJFeQy0A5mwOOIH0s+AmIuGlumDfGRBY0vA9RTIIjkG2gMZkEWSdLBIigVILIOWY6Aa9T+VLWCEloWrAQIMAI1qVkDhe/NzAAAAAElFTkSuQmCC"
+                    alt="" class="left_img"><span name="span_words">用户管理</span></a></h5></div>
+            <div id="collapseSix" name="collapse_body" class="panel-collapse collapse" aria-expanded="false">
+                <div class="panel-body">
+                    <ul>
+                        <li name="libg"><a href="/info/personalInformation" class=""><p name="font">个人信息</p></a></li>
+                        <li name="libg"><a href="/info/addUser" class=""><p name="font">添加用户</p></a></li>
+                        <li name="libg"><a href="/info/userList" class=""><p name="font">用户列表</p></a></li>
+                        <li name="libg"><a href="/info/roles" class=""><p name="font">权限说明</p></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="panel-heading"><h5 class="panel-title"><a data-toggle="collapse" href="#Three"
+                                                                  data-parent="#accordion" class="collapsed"
+                                                                  aria-expanded="false"><a href="/info/productPlanning"
+                                                                                           class=""><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsSAAALEgHS3X78AAAA2UlEQVQ4Ea1TwQ3CMAw8EH/YgIyQDWAE2CBs0A2ADToCK7BBR4AN2g3KBEauHBGhOknbnGRFspzLne2siAgZaKTkmCxlwkRY+sGm6lNkJyJqiMhJNJJT78Qs13JWmXnVsslQ4pWblGW1MPdhb3kH4CZTHLeio5Yt4LOFNLunMqhYYQtgP1GVCiaMbfYZQD+Sf2giUoRvhfAwV+FkbJQL9+D/5oC34xpT2A0rkA/jexoqfAJ4zXRqPeF6ac/+UXwoocILPzAz+O4AVsh7ti0k8MMKnUx1KToA7guC5IGX942hcwAAAABJRU5ErkJggg=="
+                    alt="" class="left_img"><span name="span_words">产品规划</span></a></a></h5></div>
+        </div>
+    </div>
+</nav>
+
+
+<script type="text/javascript" src="{% static 'js/manifest.2ae2e69a05c33dfc65f8.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/vendor.5a6d1068b87dc6457d1f.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/app.d8fa017f31b2a459a01c.js'%}"></script>

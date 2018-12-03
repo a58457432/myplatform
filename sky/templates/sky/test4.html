@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head style="background-color:white">
+    <meta charset="UTF-8">
+    <title> Test 4 </title>
+    <link href="{% static 'bootstrap-3.3.7-dist/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'bootstrap-3.3.7-dist/css/bootstrap-theme.min.css' %}" rel="stylesheet">
+    <link href="{% static 'bootstrap-3.3.7-dist/js/jquery-3.2.1.min.js' %}" rel="stylesheet">
+    <link href="{% static 'bootstrap-3.3.7-dist/js/bootstrap.min.js' %}" rel="stylesheet">
+
+
+</head>
+<body>
+
+<div class="hostInput common_bg">
+    <div class="common_title_bg">
+        <p class="common_title">
+            <a class="first_title">录入中心</a>
+            <span class="arrow"> &gt; </span>
+            <span class="titleUrl">主机录入</span>
+        </p>
+    </div>
+
+    <div class="common_title_blue_bg"><p class="common_title_size">IP地址信息</p></div>
+
+    <div class="marginTopBox entryMain">
+        <div class="entryMode">
+            <div class="entryTitle"><span>录入方式：</span></div>
+            <div class="entry">
+                <ul>
+                    <li class="li">手动录入</li>
+                    <li style="background: rgb(209, 209, 209); color: white; border-right: 1px solid white; pointer-events: none;">
+                        本地文件
+                    </li>
+                    <li style="background: rgb(209, 209, 209); color: white; border-right: 1px solid white; pointer-events: none;">
+                        URL
+                    </li>
+                    <li style="background: rgb(209, 209, 209); color: white; pointer-events: none;">公有云</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="entryIp">
+            <div class="ipTitle">IP地址信息</div>
+            <div class="ipText"><textarea name="" id="txtArea" cols="44" rows="7" placeholder="多个ip请换行"
+                                          style="border: none; resize: none;"></textarea> <span class="warn_red"
+                                                                                                style="float: right;"></span>
+            </div>
+            <div class="ipFormat">
+                支持以下格式输入<br>
+                127.0.0.1<br>
+                127.0.0.[1-10]<br>
+                127.0.0.[1,2,5]
+            </div>
+        </div>
+        <div class="entryDescribe">
+            <span>录入描述：</span>
+            <input type="text" maxlength="20" placeholder="描述不得超过20个字符">
+            <span class="warn_red"></span></div>
+    </div>
+
+    <div class="SSH">
+        <div class="marginTopBox common_title_blue_bg"><p class="common_title_size">SSH信息</p></div>
+        <div class="marginTopBox sshMain">
+            <div><span>用户名：</span> <input type="text"> <span class="warn_red"></span></div>
+            <div><span>密码：</span> <input type="password" onkeyup="this.value=this.value.replace(/\s+/g,'')"> <span
+                    class="warn_red"></span></div>
+            <div><span>端口号：</span> <input type="number"></div>
+        </div>
+    </div>
+
+    <div class="ipBtn">
+        录入
+    </div>
+</div>
+
+
+
+<script src="{% static 'bootstrap-3.3.7-dist/js/jquery-3.2.1.min.js' %}"></script>
+<script src="{% static 'bootstrap-3.3.7-dist/js/bootstrap.min.js' %}"></script>
+
+</body>
+
+</html>
